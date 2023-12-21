@@ -1,3 +1,38 @@
+# astro-flowbit
+
+## Quick Install
+
+```shell
+# Using NPM
+npx astro add flowbite
+# Using Yarn
+yarn astro add flowbite
+# Using PNPM
+pnpm astro add flowbite
+```
+astro.config.mjs
+
+```javascript
+import { defineConfig } from 'astro/config';
+import flowbite from 'astro-flowbite';
+
+export default defineConfig({
+  // ...
+  integrations: [flowbite()],
+  //             ^^^^^^^^^^
+});
+```
+
+
+## manually
+
+```bash
+npm install flowbite astro-flowbite
+```
+
+
+
+
 # Astro Starter Kit: Plugin
 
 ```shell

@@ -1,17 +1,20 @@
-# My Plugin
+# astro-flowbite Plugin
 
-**My Plugin** lets you do a thing in Astro.
+astro-flowbite lets you easly plugin flowbite in Astro.
 
 ```astro
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>My Plugin Example</title>
-  </head>
-  <body>
-    <h1>My Plugin Example</h1>
-  </body>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Astro + flowbite</title>
+	</head>
+	<body>
+		<div class="container mx-auto p-4">
+			<h1>Hello, Astro + Flowbite!</h1>
+			<p>This is a simple test.</p>
+		</div>
+	</body>
 </html>
 ```
 
@@ -19,27 +22,36 @@
 
 ## Usage
 
-Install **My Plugin** to your project.
+Install astro-flowbite to your project.
 
 ```shell
-npm install @example/my-plugin
+# Using NPM
+npm i astro-flowbite
+# Using Bun
+bun add astro-flowbite
+# Using Yarn
+yarn add astro-flowbite
+# Using PNPM
+pnpm add astro-flowbite
 ```
 
-Add **My Plugin** to your Astro configuration.
+Add astro-flowbite to your Tailwind configuration.
 
+* tailwind.config.js
 ```js
-import { myPlugin } from '@example/my-plugin'
+import flowbite from 'astro-flowbite'
 
-/** @type {import('astro').AstroUserConfig} */
-const config = {
-  vite: {
-    plugins: [
-      myPlugin()
-    ]
-  }
+/** @type {import('tailwindcss').Config} */
+export default {
+	content: [
+		'./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
+    './node_modules/flowbite/**/*.js',
+	],
+	theme: {
+		extend: {},
+	},
+	plugins: [flowbite()],
 }
-
-export default config
 ```
 
 Enjoy!

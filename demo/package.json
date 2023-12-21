@@ -1,7 +1,7 @@
 {
   "name": "astro-flowbite-demo",
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "dev": "astro dev --open",
     "start": "astro dev",
@@ -9,7 +9,10 @@
     "serve": "astro preview"
   },
   "devDependencies": {
-    "astro-flowbite": "^0.0.1",
-    "astro": "latest"
+    "astro": "latest",
+    "astro-flowbite": "latest"
+  },
+  "dependencies": {
+    "flowbite": "^2.2.1"
   }
 }

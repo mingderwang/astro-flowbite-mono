@@ -1,6 +1,6 @@
 {
   "name": "astro-flowbite",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "type": "module",
   "main": "index.js",
   "types": "index.d.ts",
@@ -8,11 +8,14 @@
     ".": "./index.js"
   },
   "files": [
-    "index.js",
-    "index.d.ts"
+    "index.js"
   ],
   "keywords": [
     "astro-plugin",
+    "flowbite",
     "example"
-  ]
+  ],
+  "dependencies": {
+    "flowbite": "^2.2.1"
+  }
 }
